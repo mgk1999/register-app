@@ -13,7 +13,7 @@ pipeline{
         }
         stage('Checkout from guthub'){
             steps{
-                git branch: 'main', credientialsId: 'github', url:'https://github.com/mgk1999/register-app.git'
+                git branch: 'main', credentialsId: 'github', url:'https://github.com/mgk1999/register-app.git'
             }
         }
         stage('Build'){
