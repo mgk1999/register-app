@@ -5,7 +5,7 @@ pipeline{
         jdk 'Java17'
 
     }
-    Stages{
+    stages{
         stage('Cleanup workspace'){
             steps{
                 cleanWs()
